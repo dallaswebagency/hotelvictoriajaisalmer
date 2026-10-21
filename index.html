@@ -63,7 +63,7 @@ nav.main a:hover:after{width:100%}
 .burger span{display:block;width:26px;height:2px;background:var(--navy);margin:6px auto;transition:.25s}
 
 /* hero */
-.hero{position:relative;min-height:88vh;display:grid;place-items:center;text-align:center;color:#fff;background:linear-gradient(180deg,rgba(10,34,64,.55),rgba(10,34,64,.72)),url('https://hotelvictoriajaisalmer.com/files/hotel-in-jaisalmer-gallery-001.jpg') center/cover;padding:80px 0}
+.hero{position:relative;min-height:88vh;display:grid;place-items:center;text-align:center;color:#fff;background:linear-gradient(180deg,rgba(10,34,64,.55),rgba(10,34,64,.72)),url('images/fort-golden-hour.jpg') center/cover;padding:80px 0}
 .hero h1{color:#fff;font-size:clamp(2.8rem,7vw,5.4rem);margin-bottom:18px}
 .hero h1 em{font-style:italic;color:var(--gold-soft)}
 .hero p.lead{max-width:680px;margin:0 auto 34px;font-size:1.15rem;color:#f4ead2;font-weight:300}
@@ -153,6 +153,10 @@ nav.main a:hover:after{width:100%}
 .review .stars{color:var(--gold-soft);letter-spacing:6px;font-size:1.3rem;margin-bottom:18px}
 .ta{display:inline-flex;gap:10px;align-items:center;margin-top:34px;padding:12px 24px;border:1.5px solid var(--gold-soft);border-radius:999px;color:var(--gold-soft);font-weight:500;transition:.25s}
 .ta:hover{background:var(--gold-soft);color:var(--navy)}
+.terr-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.terr-grid img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:12px;transition:.4s}
+.terr-grid img:hover{transform:scale(1.03)}
+@media (max-width:980px){.terr-grid{grid-template-columns:repeat(2,1fr)}}
 .ta-badge{display:inline-block;margin-top:34px;border-radius:6px;transition:.25s;box-shadow:0 14px 30px -12px rgba(0,0,0,.6)}
 .ta-badge:hover{transform:translateY(-4px)}
 .ta-badge img{width:min(304px,100%);height:auto;border-radius:6px}
@@ -321,10 +325,10 @@ footer a:hover{color:var(--gold-soft)}
     <div class="room-grid">
       <article class="room reveal"><div class="imgbox"><img loading="lazy" src="https://hotelvictoriajaisalmer.com/files/hotel-in-jaisalmer-gallery-026.jpg" alt="Victoria Suite Room 2"></div><div class="body"><h3>Victoria Suite</h3><p>Room 2, with a cushioned balcony and a view across the fort city.</p><a href="#book">ENQUIRE &rarr;</a></div></article>
       <article class="room reveal"><div class="imgbox"><img loading="lazy" src="https://hotelvictoriajaisalmer.com/files/hotel-in-jaisalmer-gallery-035.jpg" alt="Kohinoor Suite Room 5"></div><div class="body"><h3>Kohinoor Suite</h3><p>Room 5, a vibrant sandstone-walled suite with its own bathroom.</p><a href="#book">ENQUIRE &rarr;</a></div></article>
-      <article class="room reveal"><div class="imgbox"><img loading="lazy" src="https://hotelvictoriajaisalmer.com/files/hotel-in-jaisalmer-gallery-040.jpg" alt="Room 7"></div><div class="body"><h3>Room 7</h3><p>Bright and spacious with a well-appointed bathroom.</p><a href="#book">ENQUIRE &rarr;</a></div></article>
-      <article class="room reveal"><div class="imgbox"><img loading="lazy" src="https://hotelvictoriajaisalmer.com/files/hotel-in-jaisalmer-gallery-022.jpg" alt="Room 1"></div><div class="body"><h3>Room 1</h3><p>Comfortable fort-view stay in warm colours.</p><a href="#book">ENQUIRE &rarr;</a></div></article>
-      <article class="room reveal"><div class="imgbox"><img loading="lazy" src="https://hotelvictoriajaisalmer.com/files/hotel-in-jaisalmer-gallery-031.jpg" alt="Room 3"></div><div class="body"><h3>Room 3</h3><p>A light, airy room with its own colour scheme.</p><a href="#book">ENQUIRE &rarr;</a></div></article>
-      <article class="room reveal"><div class="imgbox"><img loading="lazy" src="https://hotelvictoriajaisalmer.com/files/hvroom_no_8.jpg" alt="Room 8"></div><div class="body"><h3>Room 8</h3><p>A comfortable, characterful room inside the fort.</p><a href="#book">ENQUIRE &rarr;</a></div></article>
+      <article class="room reveal"><div class="imgbox"><img loading="lazy" src="images/room-wood-window-seat.jpg" alt="Wood-panelled room with window seat"></div><div class="body"><h3>Heritage Window Seat Room</h3><p>Warm wood panelling, bright cushions and a window seat to watch the fort city.</p><a href="#book">ENQUIRE &rarr;</a></div></article>
+      <article class="room reveal"><div class="imgbox"><img loading="lazy" src="images/room-yellow-curtains.jpg" alt="Room with arched windows and yellow curtains"></div><div class="body"><h3>Arched Window Room</h3><p>Sandstone arches framed by flowing yellow curtains and a handloom bedspread.</p><a href="#book">ENQUIRE &rarr;</a></div></article>
+      <article class="room reveal"><div class="imgbox"><img loading="lazy" src="images/room-mural.jpg" alt="Room with painted mural and red bed"></div><div class="body"><h3>Mural Room</h3><p>A painted Rajasthani mural above a rich red and gold bed.</p><a href="#book">ENQUIRE &rarr;</a></div></article>
+      <article class="room reveal"><div class="imgbox"><img loading="lazy" src="images/room-stone-arch.jpg" alt="Stone vaulted room with colourful bedspread"></div><div class="body"><h3>Stone Vault Room</h3><p>Carved sandstone arches and a colourful patchwork bedspread.</p><a href="#book">ENQUIRE &rarr;</a></div></article>
     </div>
   </div>
 </section>
@@ -361,6 +365,27 @@ footer a:hover{color:var(--gold-soft)}
   </div>
 </section>
 
+<section class="section" id="terraces">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Terraces &amp; Sunsets</span>
+      <h2>Dine and unwind above the Golden City</h2>
+      <p>Three terraces command the finest Jaisalmer sunset views. Settle into cushioned seating, watch the fort glow gold, then stay for dinner under the stars.</p>
+      <div class="orn">&#10022;</div>
+    </div>
+    <div class="terr-grid reveal">
+      <img loading="lazy" src="images/sunset-sky.jpg" alt="Sunset sky over Jaisalmer haveli rooftops">
+      <img loading="lazy" src="images/rooftop-night-wicker.jpg" alt="Rooftop wicker seating at night with city lights">
+      <img loading="lazy" src="images/rooftop-swing-dusk.jpg" alt="Rooftop swing seat at dusk">
+      <img loading="lazy" src="images/terrace-night-fort-view.jpg" alt="Terrace at night facing the lit fort">
+      <img loading="lazy" src="images/dining-terrace-night.jpg" alt="Terrace dining table with illuminated fort view">
+      <img loading="lazy" src="images/courtyard-night.jpg" alt="Courtyard restaurant with red drapes at night">
+      <img loading="lazy" src="images/lantern-terrace-dusk.jpg" alt="Lantern-lit terrace seating at dusk">
+      <img loading="lazy" src="images/terrace-plants-day.jpg" alt="Sunlit terrace with potted plants and arches">
+    </div>
+  </div>
+</section>
+
 <section class="section review" id="review">
   <div class="wrap reveal">
     <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
@@ -374,7 +399,7 @@ footer a:hover{color:var(--gold-soft)}
 
 <section class="section" id="jaisalmer">
   <div class="wrap jais-grid">
-    <img class="reveal" loading="lazy" src="https://hotelvictoriajaisalmer.com/files/hotel-in-jaisalmer-gallery-002.jpg" alt="Jaisalmer Fort main gate">
+    <img class="reveal" loading="lazy" src="images/fort-golden-hour.jpg" alt="Jaisalmer Fort glowing in the golden evening light">
     <div class="reveal">
       <span class="eyebrow">About Jaisalmer</span>
       <h2>A sleepy desert city turned jewel of the Thar</h2>
@@ -476,6 +501,25 @@ footer a:hover{color:var(--gold-soft)}
 (function(){
   var B='https://hotelvictoriajaisalmer.com/files/';
   var items=[
+   ['images/fort-golden-hour.jpg','Jaisalmer Fort at golden hour'],
+   ['images/sunset-sky.jpg','Sunset over the rooftops'],
+   ['images/rooftop-night-wicker.jpg','Rooftop seating at night'],
+   ['images/rooftop-wicker-night.jpg','Rooftop seating and city lights'],
+   ['images/rooftop-swing-dusk.jpg','Rooftop swing at dusk'],
+   ['images/terrace-night-fort-view.jpg','Terrace facing the lit fort'],
+   ['images/dining-terrace-night.jpg','Terrace dining with fort view'],
+   ['images/courtyard-night.jpg','Courtyard restaurant at night'],
+   ['images/lantern-terrace-dusk.jpg','Lantern-lit terrace'],
+   ['images/terrace-plants-day.jpg','Sunlit terrace'],
+   ['images/terrace-day-wicker.jpg','Terrace with wicker chairs'],
+   ['images/city-night-view.jpg','Jaisalmer city at night'],
+   ['images/fort-wall-night.jpg','Fort wall at night'],
+   ['images/room-wood-window-seat.jpg','Heritage window seat room'],
+   ['images/room-yellow-curtains.jpg','Arched window room'],
+   ['images/room-mural.jpg','Mural room'],
+   ['images/room-stone-arch.jpg','Stone vault room'],
+   ['images/window-view.jpg','Window with desert view'],
+   ['images/carved-door.jpg','Carved wooden door'],
    ['hotel-in-jaisalmer-gallery-001.jpg','Hotel Victoria and the fort city view'],
    ['hotel-in-jaisalmer-gallery-002.jpg','Main gate'],
    ['hotel-in-jaisalmer-gallery-003.jpg','Main gate'],
@@ -524,8 +568,8 @@ footer a:hover{color:var(--gold-soft)}
   ];
   var grid=document.getElementById('grid'),lb=document.getElementById('lb'),lbi=lb.querySelector('img'),cap=lb.querySelector('.cap'),cur=0;
   items.forEach(function(it,i){
-    var a=document.createElement('a');a.href=B+it[0];a.dataset.cap=it[1];a.dataset.i=i;
-    var im=new Image();im.loading='lazy';im.alt=it[1];im.src=B+it[0];
+    var a=document.createElement('a');var src=it[0].indexOf('images/')===0?it[0]:B+it[0];a.href=src;a.dataset.cap=it[1];a.dataset.i=i;
+    var im=new Image();im.loading='lazy';im.alt=it[1];im.src=src;
     im.onerror=function(){a.remove();};
     a.appendChild(im);grid.appendChild(a);
   });
