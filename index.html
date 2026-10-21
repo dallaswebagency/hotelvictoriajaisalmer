@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hotel Victoria Jaisalmer | Heritage Stay Inside Jaisalmer Fort</title>
+<meta name="description" content="Hotel Victoria Jaisalmer is a heritage haveli stay built into the walls of the living Jaisalmer Fort, with sunset terraces, sandstone rooms and desert safaris.">
+<meta name="keywords" content="Hotel in Jaisalmer, Jaisalmer Hotels, Hotel inside Jaisalmer Fort, Desert Tour Jaisalmer, Luxury Hotel Jaisalmer">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f3157;
+  --navy-deep:#0a2240;
+  --gold:#c8902f;
+  --gold-soft:#e6b95c;
+  --sand:#fbf5e9;
+  --sand-2:#f3e7cf;
+  --ink:#1d2733;
+  --muted:#5b6672;
+  --white:#fff;
+  --radius:14px;
+  --shadow:0 18px 40px -18px rgba(15,49,87,.35);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:'Jost',system-ui,sans-serif;color:var(--ink);background:var(--white);line-height:1.7;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:'Cormorant Garamond',serif;color:var(--navy);line-height:1.1;font-weight:700}
+.eyebrow{font-size:.78rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);font-weight:500;display:block;margin-bottom:14px}
+.section{padding:96px 0}
+.section-head{text-align:center;max-width:680px;margin:0 auto 52px}
+.section-head h2{font-size:clamp(2.2rem,4.5vw,3.3rem)}
+.orn{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:16px;color:var(--gold)}
+.orn:before,.orn:after{content:"";height:1px;width:70px;background:linear-gradient(90deg,transparent,var(--gold))}
+.orn:after{transform:scaleX(-1)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 30px;border-radius:999px;font-weight:500;letter-spacing:.04em;font-size:.95rem;border:1.5px solid transparent;cursor:pointer;transition:.25s;font-family:inherit}
+.btn-gold{background:var(--gold);color:#fff}
+.btn-gold:hover{background:#b07a1f;transform:translateY(-2px)}
+.btn-ghost{border-color:rgba(255,255,255,.7);color:#fff}
+.btn-ghost:hover{background:#fff;color:var(--navy)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy-deep);transform:translateY(-2px)}
+
+/* header */
+.topbar{background:var(--navy-deep);color:#e8dcc0;font-size:.85rem}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;padding:8px 0;flex-wrap:wrap}
+.topbar a:hover{color:var(--gold-soft)}
+header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid #eee3cb}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:78px}
+.brand img{height:62px;width:auto}
+nav.main ul{display:flex;gap:30px;list-style:none;align-items:center}
+nav.main a{font-size:.92rem;font-weight:500;color:var(--navy);position:relative;padding:6px 0}
+nav.main a:after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--gold);transition:.25s}
+nav.main a:hover:after{width:100%}
+.nav-cta{padding:10px 22px !important;background:var(--gold);color:#fff !important;border-radius:999px}
+.nav-cta:after{display:none}
+.burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer}
+.burger span{display:block;width:26px;height:2px;background:var(--navy);margin:6px auto;transition:.25s}
+
+/* hero */
+.hero{position:relative;min-height:88vh;display:grid;place-items:center;text-align:center;color:#fff;background:linear-gradient(180deg,rgba(10,34,64,.55),rgba(10,34,64,.72)),url('https://hotelvictoriajaisalmer.com/files/hotel-in-jaisalmer-gallery-001.jpg') center/cover;padding:80px 0}
+.hero h1{color:#fff;font-size:clamp(2.8rem,7vw,5.4rem);margin-bottom:18px}
+.hero h1 em{font-style:italic;color:var(--gold-soft)}
+.hero p.lead{max-width:680px;margin:0 auto 34px;font-size:1.15rem;color:#f4ead2;font-weight:300}
+.hero .eyebrow{color:var(--gold-soft)}
+.hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+/* booking bar */
+.book-bar{position:relative;margin-top:-52px;z-index:5}
+.book-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:26px 30px;display:grid;grid-template-columns:1.3fr repeat(3,1fr) auto;gap:18px;align-items:end;border-top:4px solid var(--gold)}
+.book-card label{display:block;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;font-weight:500}
+.book-card input,.book-card select,.enq input,.enq select,.enq textarea{width:100%;padding:12px 14px;border:1px solid #dccfae;border-radius:10px;font:inherit;font-size:.98rem;background:#fffdf8;color:var(--ink)}
+.book-card input:focus,.book-card select:focus,.enq input:focus,.enq select:focus,.enq textarea:focus{outline:2px solid var(--gold-soft);border-color:var(--gold)}
+.book-title{font-family:'Cormorant Garamond',serif;font-size:1.45rem;color:var(--navy);font-weight:700;line-height:1.2}
+.book-title small{display:block;font-family:'Jost';font-size:.78rem;color:var(--muted);font-weight:400;letter-spacing:.04em;margin-top:4px}
+
+/* about */
+.about{background:var(--sand)}
+.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+.about-grid h2{font-size:clamp(2.2rem,4.4vw,3.2rem);margin-bottom:22px}
+.about-grid p{color:#3f4a56;margin-bottom:16px}
+.about-img{position:relative}
+.about-img img{border-radius:var(--radius);box-shadow:var(--shadow);width:100%;aspect-ratio:4/5;object-fit:cover}
+.about-img:before{content:"";position:absolute;inset:-14px 14px 14px -14px;border:2px solid var(--gold);border-radius:var(--radius);z-index:-1}
+.stats{display:flex;gap:34px;margin-top:28px;flex-wrap:wrap}
+.stats div b{display:block;font-family:'Cormorant Garamond',serif;font-size:2.6rem;color:var(--gold);line-height:1}
+.stats div span{font-size:.85rem;color:var(--muted);letter-spacing:.06em}
+
+/* why */
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.why-card{background:#fff;border:1px solid #eadfc6;border-radius:var(--radius);padding:34px 26px;text-align:center;transition:.3s}
+.why-card:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--gold-soft)}
+.why-card .ic{width:64px;height:64px;border-radius:50%;background:var(--sand-2);display:grid;place-items:center;margin:0 auto 18px;font-size:1.7rem}
+.why-card h3{font-size:1.5rem;margin-bottom:10px}
+.why-card p{font-size:.95rem;color:var(--muted)}
+
+/* rooms */
+.rooms{background:var(--navy);color:#fff}
+.rooms .section-head h2{color:#fff}
+.rooms .section-head p{color:#cfd9e6}
+.room-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.room{background:#fff;color:var(--ink);border-radius:var(--radius);overflow:hidden;box-shadow:0 20px 40px -20px rgba(0,0,0,.5)}
+.room img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:.5s}
+.room:hover img{transform:scale(1.05)}
+.room .imgbox{overflow:hidden}
+.room .body{padding:24px}
+.room h3{font-size:1.65rem;margin-bottom:6px}
+.room p{font-size:.95rem;color:var(--muted);margin-bottom:16px}
+.room a{color:var(--gold);font-weight:500;font-size:.92rem;letter-spacing:.06em}
+.room a:hover{color:var(--navy)}
+
+/* facilities */
+.fac-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.fac-grid h2{font-size:clamp(2.1rem,4vw,3rem);margin-bottom:18px}
+.fac-list{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:12px 24px;margin-top:22px}
+.fac-list li{padding-left:28px;position:relative;font-size:.98rem}
+.fac-list li:before{content:"\2726";position:absolute;left:0;color:var(--gold)}
+.fac-imgs{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fac-imgs img{border-radius:var(--radius);width:100%;height:100%;object-fit:cover;aspect-ratio:1}
+.fac-imgs img:first-child{grid-row:span 2;aspect-ratio:auto}
+
+/* gallery */
+.gallery{background:var(--sand)}
+.g-grid{columns:4 240px;column-gap:14px}
+.g-grid a{display:block;margin-bottom:14px;border-radius:12px;overflow:hidden;position:relative;break-inside:avoid;background:var(--sand-2)}
+.g-grid img{width:100%;transition:.5s}
+.g-grid a:hover img{transform:scale(1.06)}
+.g-grid a:after{content:attr(data-cap);position:absolute;left:0;right:0;bottom:0;padding:26px 14px 10px;background:linear-gradient(transparent,rgba(10,34,64,.85));color:#fff;font-size:.85rem;opacity:0;transition:.3s}
+.g-grid a:hover:after{opacity:1}
+.lb{position:fixed;inset:0;background:rgba(5,15,30,.94);display:none;align-items:center;justify-content:center;z-index:100;padding:30px}
+.lb.open{display:flex}
+.lb img{max-height:86vh;max-width:92vw;border-radius:8px}
+.lb button{position:absolute;background:none;border:0;color:#fff;font-size:2.4rem;cursor:pointer;width:56px;height:56px}
+.lb .x{top:14px;right:18px}.lb .p{left:14px}.lb .n{right:14px}
+.lb .cap{position:absolute;bottom:20px;left:0;right:0;text-align:center;color:#e9dcb9;font-size:.95rem}
+
+/* jaisalmer */
+.jais-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}
+.jais-grid img{border-radius:var(--radius);box-shadow:var(--shadow);width:100%}
+.jais-grid h2{font-size:clamp(2.1rem,4vw,3rem);margin-bottom:18px}
+.jais-grid p{color:#3f4a56;margin-bottom:14px}
+.quote{margin-top:22px;padding:18px 22px;border-left:3px solid var(--gold);background:var(--sand);font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--navy);font-style:italic}
+
+/* review */
+.review{background:linear-gradient(135deg,var(--navy-deep),var(--navy));color:#fff;text-align:center}
+.review blockquote{max-width:860px;margin:0 auto;font-family:'Cormorant Garamond',serif;font-size:clamp(1.4rem,2.6vw,2rem);line-height:1.45;font-style:italic;color:#fff}
+.review cite{display:block;margin-top:22px;font-family:'Jost';font-style:normal;font-size:.9rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-soft)}
+.review .stars{color:var(--gold-soft);letter-spacing:6px;font-size:1.3rem;margin-bottom:18px}
+.ta{display:inline-flex;gap:10px;align-items:center;margin-top:34px;padding:12px 24px;border:1.5px solid var(--gold-soft);border-radius:999px;color:var(--gold-soft);font-weight:500;transition:.25s}
+.ta:hover{background:var(--gold-soft);color:var(--navy)}
+.ta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:48px}
+.enq{background:var(--sand);padding:36px;border-radius:var(--radius);border-top:4px solid var(--gold)}
+.enq h3{font-size:2rem;margin-bottom:6px}
+.enq .row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+.enq .full{margin-top:14px}
+.enq label{display:block;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;font-weight:500}
+.enq textarea{min-height:110px;resize:vertical}
+.info-card{display:flex;flex-direction:column;gap:22px}
+.info-item{display:flex;gap:16px;align-items:flex-start}
+.info-item .ic{width:48px;height:48px;border-radius:50%;background:var(--navy);color:var(--gold-soft);display:grid;place-items:center;flex:none;font-size:1.2rem}
+.info-item b{display:block;font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy)}
+.info-item a:hover{color:var(--gold)}
+.map{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);margin-top:6px}
+.map iframe{width:100%;height:280px;border:0;display:block}
+.person{display:flex;gap:14px;align-items:center;padding:16px;border:1px solid #eadfc6;border-radius:var(--radius)}
+.person img{width:68px;height:68px;border-radius:50%;object-fit:cover}
+.person small{color:var(--muted)}
+
+/* footer */
+footer{background:var(--navy-deep);color:#cdd6e2;padding:64px 0 28px}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px}
+footer img{height:84px;width:auto;background:#fff;border-radius:12px;padding:8px;margin-bottom:16px}
+footer h4{font-family:'Cormorant Garamond',serif;color:#fff;font-size:1.35rem;margin-bottom:14px}
+footer ul{list-style:none}
+footer li{margin-bottom:8px;font-size:.95rem}
+footer a:hover{color:var(--gold-soft)}
+.copy{border-top:1px solid rgba(255,255,255,.12);margin-top:40px;padding-top:22px;font-size:.85rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;color:#9aa8ba}
+
+.float-call{position:fixed;right:18px;bottom:18px;z-index:60;display:flex;flex-direction:column;gap:10px}
+.float-call a{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;color:#fff;box-shadow:0 10px 24px -8px rgba(0,0,0,.5);font-size:1.4rem}
+.float-call .wa{background:#25a244}.float-call .ph{background:var(--gold)}
+
+.reveal{opacity:0;transform:translateY(26px);transition:.8s}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+@media (max-width:980px){
+  .book-card{grid-template-columns:1fr 1fr}
+  .book-title{grid-column:1/-1}
+  .about-grid,.fac-grid,.jais-grid,.contact-grid{grid-template-columns:1fr;gap:40px}
+  .why-grid{grid-template-columns:1fr 1fr}
+  .room-grid{grid-template-columns:1fr 1fr}
+  .f-grid{grid-template-columns:1fr 1fr}
+  .burger{display:block}
+  nav.main{position:absolute;top:78px;left:0;right:0;background:#fff;border-bottom:1px solid #eadfc6;display:none;padding:14px 20px 22px}
+  nav.main.open{display:block}
+  nav.main ul{flex-direction:column;align-items:flex-start;gap:6px}
+  nav.main a{display:block;padding:10px 0;font-size:1.05rem}
+}
+@media (max-width:620px){
+  .section{padding:68px 0}
+  .why-grid,.room-grid,.f-grid,.fac-list,.enq .row{grid-template-columns:1fr}
+  .book-card{grid-template-columns:1fr;padding:22px}
+  .brand img{height:52px}
+  .topbar .wrap{justify-content:center;text-align:center}
+  .about-img:before{display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>On Fort, Kund Para, Jaisalmer - 345001, Rajasthan</span>
+    <span><a href="tel:+919374757770">+91 93747 57770</a> &nbsp;|&nbsp; <a href="mailto:hotelvictoria@rediffmail.com">hotelvictoria@rediffmail.com</a></span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Hotel Victoria Jaisalmer home"><img src="logo.png" alt="Hotel Victoria Jaisalmer logo"></a>
+    <button class="burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="main" id="nav">
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#facilities">Facilities</a></li>
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#jaisalmer">About Jaisalmer</a></li>
+        <li><a href="#why">Why Victoria</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="nav-cta" href="#book">Book a Room</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap reveal">
+    <span class="eyebrow">Inside the Living Fort of Jaisalmer</span>
+    <h1>Hotel <em>Victoria</em></h1>
+    <p class="lead">Two converted town houses built right into the fort walls, with sandstone rooms, cushioned balconies and three terraces that command the finest sunset views in the Golden City.</p>
+    <div class="hero-btns">
+      <a class="btn btn-gold" href="#book">Book a Room</a>
+      <a class="btn btn-ghost" href="#gallery">View Gallery</a>
+    </div>
+  </div>
+</section>
+
+<div class="book-bar">
+  <div class="wrap">
+    <form class="book-card" id="quick" action="#book">
+      <div class="book-title">Book Hotel Victoria Jaisalmer Online<small>Get instant confirmation</small></div>
+      <div><label for="q-in">Check-in date</label><input type="date" id="q-in" required></div>
+      <div><label for="q-n">Nights</label>
+        <select id="q-n"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option></select></div>
+      <div><label for="q-g">Guests</label>
+        <select id="q-g"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5+</option></select></div>
+      <button class="btn btn-gold" type="submit">Check Availability</button>
+    </form>
+  </div>
+</div>
+
+<section class="section about" id="about">
+  <div class="wrap about-grid">
+    <div class="reveal">
+      <span class="eyebrow">About Us</span>
+      <h2>The best place to stay in the only living fort of the world</h2>
+      <p>The Golden City of India, Jaisalmer was founded in 1156. It is known for its magnificent sandstone palaces, ornate Jain temple, the finely wrought manors of the palace and the Hotel Victoria. Hotel Victoria is said to be the best place to stay in the only live fort of the world.</p>
+      <p>It comprises two converted town houses built right into the fort walls, with rooms decorated in vivid shades of crimson, lime and orange. Its three terraces command the finest Jaisalmer sunset views. Hotel Victoria has a simple charm that suits its remote, romantic Arabian Nights setting in the desert town of Jaisalmer.</p>
+      <p>Its glorious roof terrace, covered with Indian floor cushions, offers a spectacular view of the town, fort and desert beyond. If you are looking for a delightful and affordable vacation, the picturesque city of Jaisalmer is waiting for you.</p>
+      <div class="stats">
+        <div><b>1156</b><span>Jaisalmer founded</span></div>
+        <div><b>3</b><span>Sunset terraces</span></div>
+        <div><b>84</b><span>TripAdvisor travellers rate us excellent</span></div>
+      </div>
+    </div>
+    <div class="about-img reveal">
+      <img src="https://hotelvictoriajaisalmer.com/images/hotel-in-jaisalmer-Victoria8.jpg" alt="Hotel Victoria Jaisalmer on the fort" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="section" id="why">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Why Hotel Victoria</span>
+      <h2>A heart-of-the-city stay with fort-wall charm</h2>
+      <div class="orn">&#10022;</div>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal"><div class="ic">&#127984;</div><h3>Historic Building</h3><p>A detached, historically built hotel whose atrium adds to the classic style of the interior.</p></div>
+      <div class="why-card reveal"><div class="ic">&#127912;</div><h3>Warm Colours</h3><p>An unusual combination of yellow, red and pink creates a warm and cosy atmosphere.</p></div>
+      <div class="why-card reveal"><div class="ic">&#128716;</div><h3>Spacious Rooms</h3><p>Comfortable, light-filled rooms, each designed in its own colour and personality.</p></div>
+      <div class="why-card reveal"><div class="ic">&#128205;</div><h3>Central Location</h3><p>In the heart of Jaisalmer, surrounded by small shops selling traditional Rajasthani materials.</p></div>
+    </div>
+    <p class="reveal" style="text-align:center;max-width:780px;margin:44px auto 0;color:#3f4a56">Our hotel is a business class hotel, conveniently located close to the heart of the city and the main tourist attractions of Jaisalmer. It also offers a convenient conference area and modern equipment suitable for all types of events.</p>
+  </div>
+</section>
+
+<section class="section rooms" id="rooms">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Accommodation</span>
+      <h2>Rooms with a persona of their own</h2>
+      <p>Sandstone walls, colourful bedspreads, patterned rugs and tasteful art. Step through a window from the honeymoon suite onto an alluring cushioned balcony.</p>
+    </div>
+    <div class="room-grid">
+      <article class="room reveal"><div class="imgbox"><img loading="lazy" src="https://hotelvictoriajaisalmer.com/files/hotel-in-jaisalmer-gallery-026.jpg" alt="Victoria Suite Room 2"></div><div class="body"><h3>Victoria Suite</h3><p>Room 2, with a cushioned balcony and a view across the fort city.</p><a href="#book">ENQUIRE &rarr;</a></div></article>
+      <article class="room reveal"><div class="imgbox"><img loading="lazy" src="https://hotelvictoriajaisalmer.com/files/hotel-in-jaisalmer-gallery-035.jpg" alt="Kohinoor Suite Room 5"></div><div class="body"><h3>Kohinoor Suite</h3><p>Room 5, a vibrant sandstone-walled suite with its own bathroom.</p><a href="#book">ENQUIRE &rarr;</a></div></article>
+      <article class="room reveal"><div class="imgbox"><img loading="lazy" src="https://hotelvictoriajaisalmer.com/files/hotel-in-jaisalmer-gallery-040.jpg" alt="Room 7"></div><div class="body"><h3>Room 7</h3><p>Bright and spacious with a well-appointed bathroom.</p><a href="#book">ENQUIRE &rarr;</a></div></article>
+      <article class="room reveal"><div class="imgbox"><img loading="lazy" src="https://hotelvictoriajaisalmer.com/files/hotel-in-jaisalmer-gallery-022.jpg" alt="Room 1"></div><div class="body"><h3>Room 1</h3><p>Comfortable fort-view stay in warm colours.</p><a href="#book">ENQUIRE &rarr;</a></div></article>
+      <article class="room reveal"><div class="imgbox"><img loading="lazy" src="https://hotelvictoriajaisalmer.com/files/hotel-in-jaisalmer-gallery-031.jpg" alt="Room 3"></div><div class="body"><h3>Room 3</h3><p>A light, airy room with its own colour scheme.</p><a href="#book">ENQUIRE &rarr;</a></div></article>
+      <article class="room reveal"><div class="imgbox"><img loading="lazy" src="https://hotelvictoriajaisalmer.com/files/hvroom_no_8.jpg" alt="Room 8"></div><div class="body"><h3>Room 8</h3><p>A comfortable, characterful room inside the fort.</p><a href="#book">ENQUIRE &rarr;</a></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="facilities">
+  <div class="wrap fac-grid">
+    <div class="reveal">
+      <span class="eyebrow">Facilities &amp; Services</span>
+      <h2>Desert camping, safaris and comfort</h2>
+      <p style="color:#3f4a56">Hotel Victoria Jaisalmer is a high class hotel with camping facilities in the midst of the Thar Desert, surrounded by natural sand dunes. Enjoy comfortable accommodation in mud cottages, huts and tents with campfire, dinner, music, folk dance and a camel ride.</p>
+      <ul class="fac-list">
+        <li>High speed internet and e-mail</li>
+        <li>Round the clock room service</li>
+        <li>STD, ISD, CTV</li>
+        <li>Laundry</li>
+        <li>Doctor on call</li>
+        <li>Travel counter</li>
+        <li>Country tour</li>
+        <li>Camel safari</li>
+        <li>Desert tour</li>
+        <li>Overnight safari with camel ride</li>
+        <li>Sunset from the sand dunes</li>
+        <li>Snacks</li>
+        <li>Rajasthani folk music, dance and dinner</li>
+        <li>Overnight in traditional huts and Swiss tents</li>
+      </ul>
+      <p style="margin-top:22px"><a class="ta" style="color:var(--navy);border-color:var(--gold)" href="http://www.tripadvisor.in/Restaurant_Review-g297667-d2086717-Reviews-Hotel_victoria_Restaurant_jaisalmer-Jaisalmer_Rajasthan.html" target="_blank" rel="noopener">Read reviews of Hotel Victoria Restaurant &rarr;</a></p>
+    </div>
+    <div class="fac-imgs reveal">
+      <img loading="lazy" src="https://hotelvictoriajaisalmer.com/files/Facilities_1.jpg" alt="Hotel Victoria facilities">
+      <img loading="lazy" src="https://hotelvictoriajaisalmer.com/files/Facilities_2.jpg" alt="Desert camp">
+      <img loading="lazy" src="https://hotelvictoriajaisalmer.com/files/Facilities_3.jpg" alt="Camel safari">
+    </div>
+  </div>
+</section>
+
+<section class="section review" id="review">
+  <div class="wrap reveal">
+    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+    <blockquote>"Step through a window opening from the honeymoon suite onto an alluring cushioned balcony, and you'll feel the world is yours for the asking. If you need some air, climb the stairs to the roof, look west, and if the timing is right, you can bet there's a truly magnificent sunset on the cards."</blockquote>
+    <cite>Susan Derby, Lonely Planet author</cite>
+    <div class="ta-row">
+      <a class="ta" href="http://www.tripadvisor.in/Hotel_Review-g297667-d646484-Reviews-Hotel_Victoria-Jaisalmer_Rajasthan.html" target="_blank" rel="noopener">Hotel Victoria is rated "excellent" by 84 travellers on TripAdvisor &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="jaisalmer">
+  <div class="wrap jais-grid">
+    <img class="reveal" loading="lazy" src="https://hotelvictoriajaisalmer.com/files/hotel-in-jaisalmer-gallery-002.jpg" alt="Jaisalmer Fort main gate">
+    <div class="reveal">
+      <span class="eyebrow">About Jaisalmer</span>
+      <h2>A sleepy desert city turned jewel of the Thar</h2>
+      <p>Once a sleepy desert city, Jaisalmer has transformed itself into a major tourist destination of India. Situated amid the picturesque Thar Desert, it commands a premier position among the tourist attractions of Rajasthan, revered by Indians and foreign tourists alike.</p>
+      <p>Jaisalmer Fort, locally known as Sonar Quila, is a dominating structure amidst the sands. The city is also known for its old mansions, the havelis, of which Salim Ji ki Haveli and Nathmal Ji ki Haveli are the most striking. The amalgamation of ancient and medieval architecture will catch your fancy.</p>
+      <p>Jaisalmer is a prominent educational and cultural hub that regularly showcases the vivid culture of Rajasthan, including folk dances and semi classical and folk music. The people are warm and welcoming, so come and enjoy the traditional call of <i>padharo mahare desh</i>.</p>
+      <div class="quote">Padharo mahare desh. Welcome to our land.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section gallery" id="gallery">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Hotel Gallery</span>
+      <h2>Picture gallery</h2>
+      <div class="orn">&#10022;</div>
+    </div>
+    <div class="g-grid" id="grid"></div>
+  </div>
+</section>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="x" aria-label="Close">&times;</button><button class="p" aria-label="Previous">&#8249;</button>
+  <img alt=""><button class="n" aria-label="Next">&#8250;</button><div class="cap"></div>
+</div>
+
+<section class="section" id="book">
+  <div class="wrap contact-grid" id="contact">
+    <form class="enq reveal" id="enq">
+      <span class="eyebrow">Book a Room</span>
+      <h3>Make an enquiry</h3>
+      <div class="row"><div><label for="f-name">Your name</label><input id="f-name" required></div><div><label for="f-country">Your country</label><input id="f-country"></div></div>
+      <div class="row"><div><label for="f-email">Email address</label><input id="f-email" type="email" required></div><div><label for="f-mob">Mobile</label><input id="f-mob" type="tel"></div></div>
+      <div class="row"><div><label for="f-arr">Arrival date</label><input id="f-arr" type="date"></div><div><label for="f-dep">Departure date</label><input id="f-dep" type="date"></div></div>
+      <div class="row"><div><label for="f-rooms">Rooms required</label><select id="f-rooms"><option>1</option><option>2</option><option>3</option><option>4</option><option>5 or more</option></select></div><div><label for="f-pers">Number of persons</label><select id="f-pers"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5 or more</option></select></div></div>
+      <div class="full"><label for="f-req">Other requirement</label><textarea id="f-req"></textarea></div>
+      <button class="btn btn-navy full" type="submit" style="margin-top:18px">Send Enquiry</button>
+      <p style="font-size:.82rem;color:var(--muted);margin-top:10px">This opens your email app with the details filled in, addressed to the hotel.</p>
+    </form>
+
+    <div class="info-card reveal">
+      <div>
+        <span class="eyebrow">Contact Us</span>
+        <h2 style="font-size:clamp(2rem,3.6vw,2.8rem)">Hotel Victoria Jaisalmer</h2>
+      </div>
+      <div class="info-item"><div class="ic">&#128205;</div><div><b>Address</b>On Fort, Kund Para, Jaisalmer - 345001 (Raj)</div></div>
+      <div class="info-item"><div class="ic">&#128241;</div><div><b>Mobile</b><a href="tel:+919374757770">+91 93747 57770</a>, <a href="tel:+919351616669">09351 616669</a></div></div>
+      <div class="info-item"><div class="ic">&#9742;</div><div><b>Phone</b><a href="tel:+912992252150">+91 2992 252150</a>, <a href="tel:+912992253844">253844</a></div></div>
+      <div class="info-item"><div class="ic">&#9993;</div><div><b>Email</b><a href="mailto:hotelvictoria@rediffmail.com">hotelvictoria@rediffmail.com</a></div></div>
+      <div class="person"><img loading="lazy" src="https://hotelvictoriajaisalmer.com/images/Pankaj_Sir.jpg" alt="Pankaj Purohit"><div><b style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy)">Pankaj Purohit</b><br><small>Hotel Victoria Jaisalmer</small></div></div>
+      <div class="map"><iframe loading="lazy" title="Hotel Victoria Jaisalmer on Google Maps" src="https://www.google.com/maps?q=Hotel+Victoria+Jaisalmer+Kund+Para+Fort&output=embed" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <img src="logo.png" alt="Hotel Victoria Jaisalmer">
+        <p style="font-size:.95rem">A heritage haveli stay built into the walls of the only living fort in the world.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li><li><a href="#facilities">Facilities</a></li><li><a href="#rooms">Rooms</a></li><li><a href="#jaisalmer">About Jaisalmer</a></li><li><a href="#why">Why Hotel Victoria</a></li><li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Reviews</h4>
+        <ul>
+          <li><a href="http://www.tripadvisor.in/Hotel_Review-g297667-d646484-Reviews-Hotel_Victoria-Jaisalmer_Rajasthan.html" target="_blank" rel="noopener">Hotel Victoria on TripAdvisor</a></li>
+          <li><a href="http://www.tripadvisor.in/Restaurant_Review-g297667-d2086717-Reviews-Hotel_victoria_Restaurant_jaisalmer-Jaisalmer_Rajasthan.html" target="_blank" rel="noopener">Restaurant on TripAdvisor</a></li>
+          <li><a href="http://www.tripadvisor.in/Tourism-g297667-Jaisalmer_Rajasthan-Vacations.html" target="_blank" rel="noopener">Jaisalmer travel advice</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>On Fort, Kund Para, Jaisalmer - 345001</li>
+          <li><a href="tel:+919374757770">+91 93747 57770</a></li>
+          <li><a href="tel:+912992252150">+91 2992 252150</a></li>
+          <li><a href="mailto:hotelvictoria@rediffmail.com">hotelvictoria@rediffmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy"><span>&copy; <span id="yr"></span> Hotel Victoria Jaisalmer. All rights reserved.</span><span>Jaisalmer, Rajasthan, India</span></div>
+  </div>
+</footer>
+
+<div class="float-call">
+  <a class="wa" href="https://wa.me/919374757770" target="_blank" rel="noopener" aria-label="WhatsApp">&#128172;</a>
+  <a class="ph" href="tel:+919374757770" aria-label="Call the hotel">&#128222;</a>
+</div>
+
+<script>
+(function(){
+  var B='https://hotelvictoriajaisalmer.com/files/';
+  var items=[
+   ['hotel-in-jaisalmer-gallery-001.jpg','Hotel Victoria and the fort city view'],
+   ['hotel-in-jaisalmer-gallery-002.jpg','Main gate'],
+   ['hotel-in-jaisalmer-gallery-003.jpg','Main gate'],
+   ['hotel-in-jaisalmer-gallery-004.jpg','Gate'],
+   ['hotel-in-jaisalmer-gallery-005.jpg','Balcony'],
+   ['hotel-in-jaisalmer-gallery-006.jpg','Entrance lobby'],
+   ['hotel-in-jaisalmer-gallery-007.jpg','Family'],
+   ['hotel-in-jaisalmer-gallery-008.jpg','Balcony'],
+   ['hotel-in-jaisalmer-gallery-009.jpg','Lobby'],
+   ['hotel-in-jaisalmer-gallery-011.jpg','Lobby'],
+   ['hotel-in-jaisalmer-gallery-012.jpg','Lobby'],
+   ['hotel-in-jaisalmer-gallery-013.jpg','Lobby'],
+   ['hotel-in-jaisalmer-gallery-014.jpg','Lobby'],
+   ['hotel-in-jaisalmer-gallery-015.jpg','Lobby'],
+   ['hotel-in-jaisalmer-gallery-016.jpg','Lobby'],
+   ['hotel-in-jaisalmer-gallery-017.jpg','Lobby'],
+   ['hotel-in-jaisalmer-gallery-018.jpg','Fountain'],
+   ['hotel-in-jaisalmer-gallery-019.jpg','Front'],
+   ['hotel-in-jaisalmer-gallery-020.jpg','Temple'],
+   ['hotel-in-jaisalmer-gallery-021.jpg','Step'],
+   ['hotel-in-jaisalmer-gallery-022.jpg','Room 1'],
+   ['hotel-in-jaisalmer-gallery-023.jpg','Room 1'],
+   ['hotel-in-jaisalmer-gallery-024.jpg','Room 2'],
+   ['hotel-in-jaisalmer-gallery-025.jpg','Room 2'],
+   ['hotel-in-jaisalmer-gallery-026.jpg','Victoria Suite, Room 2'],
+   ['hotel-in-jaisalmer-gallery-027.jpg','Room 2'],
+   ['hotel-in-jaisalmer-gallery-028.jpg','Room 2 balcony view'],
+   ['hotel-in-jaisalmer-gallery-029.jpg','Room 2 balcony view'],
+   ['hotel-in-jaisalmer-gallery-031.jpg','Room 3'],
+   ['hotel-in-jaisalmer-gallery-032.jpg','Room 3'],
+   ['hotel-in-jaisalmer-gallery-034.jpg','Room 5'],
+   ['hotel-in-jaisalmer-gallery-035.jpg','Kohinoor Suite, Room 5'],
+   ['hotel-in-jaisalmer-gallery-036.jpg','Room 5 bathroom'],
+   ['hotel-in-jaisalmer-gallery-037.jpg','Room 6'],
+   ['hotel-in-jaisalmer-gallery-038.jpg','Room 7'],
+   ['hotel-in-jaisalmer-gallery-040.jpg','Room 7'],
+   ['hotel-in-jaisalmer-gallery-042.jpg','Room 7 bathroom'],
+   ['hotel-in-jaisalmer-gallery-043.jpg','Hotel view'],
+   ['hotel-in-jaisalmer-gallery-044.jpg','Every room view'],
+   ['hotel-in-jaisalmer-gallery-045.jpg','Lobby'],
+   ['hotel-in-jaisalmer-gallery-046.jpg','Room 2 balcony view'],
+   ['hotel-in-jaisalmer-gallery-047.jpg','Room 4'],
+   ['hvroom_no_8.jpg','Room 8'],
+   ['hvroom_no_10.jpg','Room 10'],
+   ['hvroom_no_11.jpg','Room 11']
+  ];
+  var grid=document.getElementById('grid'),lb=document.getElementById('lb'),lbi=lb.querySelector('img'),cap=lb.querySelector('.cap'),cur=0;
+  items.forEach(function(it,i){
+    var a=document.createElement('a');a.href=B+it[0];a.dataset.cap=it[1];a.dataset.i=i;
+    var im=new Image();im.loading='lazy';im.alt=it[1];im.src=B+it[0];
+    im.onerror=function(){a.remove();};
+    a.appendChild(im);grid.appendChild(a);
+  });
+  var vis=function(){return Array.prototype.slice.call(grid.querySelectorAll('a'));};
+  function show(n){var v=vis();cur=(n+v.length)%v.length;lbi.src=v[cur].href;cap.textContent=v[cur].dataset.cap;lb.classList.add('open');}
+  grid.addEventListener('click',function(e){var a=e.target.closest('a');if(!a)return;e.preventDefault();show(vis().indexOf(a));});
+  lb.querySelector('.x').onclick=function(){lb.classList.remove('open')};
+  lb.querySelector('.p').onclick=function(){show(cur-1)};
+  lb.querySelector('.n').onclick=function(){show(cur+1)};
+  lb.addEventListener('click',function(e){if(e.target===lb)lb.classList.remove('open')});
+  document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;if(e.key==='Escape')lb.classList.remove('open');if(e.key==='ArrowLeft')show(cur-1);if(e.key==='ArrowRight')show(cur+1);});
+
+  var burger=document.querySelector('.burger'),nav=document.getElementById('nav');
+  burger.onclick=function(){var o=nav.classList.toggle('open');burger.setAttribute('aria-expanded',o)};
+  nav.addEventListener('click',function(e){if(e.target.tagName==='A'){nav.classList.remove('open');burger.setAttribute('aria-expanded',false)}});
+
+  var today=new Date().toISOString().slice(0,10);
+  ['q-in','f-arr','f-dep'].forEach(function(id){var el=document.getElementById(id);if(el)el.min=today;});
+  document.getElementById('yr').textContent=new Date().getFullYear();
+
+  document.getElementById('quick').addEventListener('submit',function(e){
+    e.preventDefault();
+    document.getElementById('f-arr').value=document.getElementById('q-in').value;
+    var d=new Date(document.getElementById('q-in').value);
+    if(!isNaN(d)){d.setDate(d.getDate()+parseInt(document.getElementById('q-n').value,10));document.getElementById('f-dep').value=d.toISOString().slice(0,10);}
+    var g=document.getElementById('q-g').value;
+    var sel=document.getElementById('f-pers');for(var i=0;i<sel.options.length;i++){if(sel.options[i].text.indexOf(g.replace('+',''))===0){sel.selectedIndex=i;break;}}
+    document.getElementById('book').scrollIntoView({behavior:'smooth'});
+  });
+
+  document.getElementById('enq').addEventListener('submit',function(e){
+    e.preventDefault();
+    var v=function(id){return document.getElementById(id).value;};
+    var body=['Name: '+v('f-name'),'Country: '+v('f-country'),'Email: '+v('f-email'),'Mobile: '+v('f-mob'),'Arrival: '+v('f-arr'),'Departure: '+v('f-dep'),'Rooms: '+v('f-rooms'),'Persons: '+v('f-pers'),'Other requirement: '+v('f-req')].join('\n');
+    location.href='mailto:hotelvictoria@rediffmail.com?subject='+encodeURIComponent('Room enquiry from '+v('f-name'))+'&body='+encodeURIComponent(body);
+  });
+
+  var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>
