@@ -95,6 +95,20 @@
     Array.prototype.forEach.call(dots,function(d,i){d.onclick=function(){go(i);start();};});
     start();
   }
+  var rt=$('rvTrack');
+  if(rt){
+    var step=function(d){var c=rt.querySelector('.rv-card');var w=c?c.getBoundingClientRect().width+22:300;var n=Math.max(1,Math.round(rt.clientWidth/w));rt.scrollBy({left:d*w*n,behavior:'smooth'});};
+    $('rvPrev').onclick=function(){step(-1)};$('rvNext').onclick=function(){step(1)};
+    rt.querySelectorAll('.rv-card').forEach(function(c){
+      var t=c.querySelector('.rv-text');
+      if(t.scrollHeight>t.clientHeight+2){
+        var b=document.createElement('button');b.className='rv-more';b.type='button';b.textContent='Read more';
+        b.onclick=function(){var o=c.classList.toggle('open');b.textContent=o?'Show less':'Read more'};
+        c.appendChild(b);
+      }
+    });
+  }
+
   var burger=document.querySelector('.burger'),nav=$('nav');
   burger.onclick=function(){var o=nav.classList.toggle('open');burger.setAttribute('aria-expanded',o)};
 
