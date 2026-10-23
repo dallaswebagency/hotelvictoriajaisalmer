@@ -539,6 +539,25 @@ html.no-js .reveal{opacity:1!important;transform:none!important}
 .map-sec{background:#fff7ec}
 .map-sec .map{margin-top:0}
 .map-sec .reveal>p{text-align:center}
+
+/* ---- What you get ---- */
+.wyg{background:linear-gradient(180deg,#fff,#fff7ec)}
+.wy-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.wy{position:relative;background:#fff;border:1px solid #eadfc6;border-radius:20px;padding:30px 28px;overflow:hidden;transition:transform .45s cubic-bezier(.2,.8,.2,1),box-shadow .45s}
+.wy:before{content:"";position:absolute;left:0;top:0;right:0;height:5px;background:linear-gradient(90deg,var(--c),transparent);transform-origin:left;transform:scaleX(.3);transition:transform .5s}
+.wy:hover{transform:translateY(-8px);box-shadow:0 26px 46px -24px var(--c)}
+.wy:hover:before{transform:scaleX(1)}
+.wy-h{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.wy-h i{flex:none;width:56px;height:56px;border-radius:16px;display:grid;place-items:center;font-style:normal;font-size:1.6rem;background:linear-gradient(135deg,var(--c),color-mix(in srgb,var(--c) 55%,#fff));box-shadow:0 12px 22px -10px var(--c);transition:transform .5s cubic-bezier(.3,1.6,.5,1)}
+.wy:hover .wy-h i{transform:rotate(-10deg) scale(1.12)}
+.wy-h h3{font-size:1.5rem;color:var(--navy)}
+.wy ul{list-style:none;display:grid;gap:10px}
+.wy li{position:relative;padding-left:30px;font-size:1.02rem;color:#3f4a56;line-height:1.5}
+.wy li:before{content:"✓";position:absolute;left:0;top:1px;width:21px;height:21px;border-radius:50%;background:color-mix(in srgb,var(--c) 15%,#fff);color:var(--c);font-weight:700;font-size:.8rem;display:grid;place-items:center}
+.wy-grid .reveal:nth-child(3n+2){transition-delay:.12s}.wy-grid .reveal:nth-child(3n+3){transition-delay:.24s}
+.wy-grid .wy.reveal{transform:translateY(40px)}.wy-grid .wy.reveal.in{transform:none}
+@media (max-width:980px){.wy-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:620px){.wy-grid{grid-template-columns:1fr}}
 @media (max-width:620px){body{font-size:18px}.hero p.lead{font-size:1.15rem}}
 
 /* ---- floating Google review pop-up ---- */
