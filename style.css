@@ -50,7 +50,7 @@ nav.main a:hover:after{width:100%}
 .burger span{display:block;width:26px;height:2px;background:var(--navy);margin:6px auto;transition:.25s}
 
 /* hero */
-.hero{position:relative;min-height:88vh;display:grid;place-items:center;text-align:center;color:#fff;background:linear-gradient(180deg,rgba(10,34,64,.55),rgba(10,34,64,.72)),url('images/fort-golden-hour.jpg') center/cover;padding:80px 0}
+.hero{position:relative;min-height:88vh;display:grid;place-items:center;text-align:center;color:#fff;background:linear-gradient(180deg,rgba(10,34,64,.55),rgba(10,34,64,.72)),url('assets/images/fort-golden-hour.jpg') center/cover;padding:80px 0}
 .hero h1{color:#fff;font-size:clamp(2.8rem,7vw,5.4rem);margin-bottom:18px}
 .hero h1 em{font-style:italic;color:var(--gold-soft)}
 .hero p.lead{max-width:680px;margin:0 auto 34px;font-size:1.15rem;color:#f4ead2;font-weight:300}
@@ -499,6 +499,8 @@ footer .f-grid>div:first-child img{height:104px}
 @media (max-width:1100px){.f-grid{grid-template-columns:1fr 1fr 1fr}}
 @media (max-width:760px){.f-grid{grid-template-columns:1fr 1fr}.fbadges{padding-top:34px}}
 @media (max-width:520px){.f-grid{grid-template-columns:1fr}.copy{flex-direction:column;text-align:center}}
+
+html.no-js .reveal{opacity:1!important;transform:none!important}
 @media (max-width:620px){body{font-size:18px}.hero p.lead{font-size:1.15rem}}
 
 /* ---- floating Google review pop-up ---- */

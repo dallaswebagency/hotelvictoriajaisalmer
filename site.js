@@ -1,28 +1,28 @@
 (function(){
   var B='https://hotelvictoriajaisalmer.com/files/';
   var items=[
-   ['images/heritage-corridor.jpg','Heritage corridor'],
-   ['images/thali-meal.jpg','Home-style thali'],
-   ['images/terrace-dinner.jpg','Terrace dinner'],
-   ['images/fort-golden-hour.jpg','Jaisalmer Fort at golden hour'],
-   ['images/sunset-sky.jpg','Sunset over the rooftops'],
-   ['images/rooftop-night-wicker.jpg','Rooftop seating at night'],
-   ['images/rooftop-wicker-night.jpg','Rooftop seating and city lights'],
-   ['images/rooftop-swing-dusk.jpg','Rooftop swing at dusk'],
-   ['images/terrace-night-fort-view.jpg','Terrace facing the lit fort'],
-   ['images/dining-terrace-night.jpg','Terrace dining with fort view'],
-   ['images/courtyard-night.jpg','Courtyard restaurant at night'],
-   ['images/lantern-terrace-dusk.jpg','Lantern-lit terrace'],
-   ['images/terrace-plants-day.jpg','Sunlit terrace'],
-   ['images/terrace-day-wicker.jpg','Terrace with wicker chairs'],
-   ['images/city-night-view.jpg','Jaisalmer city at night'],
-   ['images/fort-wall-night.jpg','Fort wall at night'],
-   ['images/room-wood-window-seat.jpg','Heritage window seat room'],
-   ['images/room-yellow-curtains.jpg','Arched window room'],
-   ['images/room-mural.jpg','Mural room'],
-   ['images/room-stone-arch.jpg','Stone vault room'],
-   ['images/window-view.jpg','Window with desert view'],
-   ['images/carved-door.jpg','Carved wooden door'],
+   ['assets/images/heritage-corridor.jpg','Heritage corridor'],
+   ['assets/images/thali-meal.jpg','Home-style thali'],
+   ['assets/images/terrace-dinner.jpg','Terrace dinner'],
+   ['assets/images/fort-golden-hour.jpg','Jaisalmer Fort at golden hour'],
+   ['assets/images/sunset-sky.jpg','Sunset over the rooftops'],
+   ['assets/images/rooftop-night-wicker.jpg','Rooftop seating at night'],
+   ['assets/images/rooftop-wicker-night.jpg','Rooftop seating and city lights'],
+   ['assets/images/rooftop-swing-dusk.jpg','Rooftop swing at dusk'],
+   ['assets/images/terrace-night-fort-view.jpg','Terrace facing the lit fort'],
+   ['assets/images/dining-terrace-night.jpg','Terrace dining with fort view'],
+   ['assets/images/courtyard-night.jpg','Courtyard restaurant at night'],
+   ['assets/images/lantern-terrace-dusk.jpg','Lantern-lit terrace'],
+   ['assets/images/terrace-plants-day.jpg','Sunlit terrace'],
+   ['assets/images/terrace-day-wicker.jpg','Terrace with wicker chairs'],
+   ['assets/images/city-night-view.jpg','Jaisalmer city at night'],
+   ['assets/images/fort-wall-night.jpg','Fort wall at night'],
+   ['assets/images/room-wood-window-seat.jpg','Heritage window seat room'],
+   ['assets/images/room-yellow-curtains.jpg','Arched window room'],
+   ['assets/images/room-mural.jpg','Mural room'],
+   ['assets/images/room-stone-arch.jpg','Stone vault room'],
+   ['assets/images/window-view.jpg','Window with desert view'],
+   ['assets/images/carved-door.jpg','Carved wooden door'],
    ['hotel-in-jaisalmer-gallery-001.jpg','Hotel Victoria and the fort city view'],
    ['hotel-in-jaisalmer-gallery-002.jpg','Main gate'],
    ['hotel-in-jaisalmer-gallery-003.jpg','Main gate'],
@@ -74,7 +74,7 @@
   if(grid&&lb){
     var lbi=lb.querySelector('img'),cap=lb.querySelector('.cap'),cur=0;
     items.forEach(function(it,i){
-      var a=document.createElement('a');var src=it[0].indexOf('images/')===0?it[0]:B+it[0];a.href=src;a.dataset.cap=it[1];
+      var a=document.createElement('a');var src=it[0].indexOf('assets/images/')===0?it[0]:B+it[0];a.href=src;a.dataset.cap=it[1];
       var im=new Image();im.loading='lazy';im.alt=it[1];im.src=src;im.onerror=function(){a.remove();};
       a.appendChild(im);grid.appendChild(a);
     });
@@ -141,6 +141,11 @@
     });
   }
 
-  var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});
-  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+  var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:0,rootMargin:'0px 0px 12% 0px'});
+  var rv=document.querySelectorAll('.reveal'),scrolled=false;
+  rv.forEach(function(el){io.observe(el)});
+  function sweep(){rv.forEach(function(el){if(!el.classList.contains('in')&&el.getBoundingClientRect().top<innerHeight*1.1){el.classList.add('in');}});}
+  addEventListener('scroll',function(){scrolled=true;sweep();},{passive:true});addEventListener('resize',sweep);addEventListener('load',sweep);
+  setTimeout(sweep,300);
+  setTimeout(function(){if(!scrolled)rv.forEach(function(el){el.classList.add('in')});},3500);
 })();
