@@ -357,4 +357,16 @@ nav.main ul{gap:6px 22px}
 .about-img{align-self:stretch}
 .about-img img{aspect-ratio:auto;width:100%;height:100%;min-height:460px;max-height:640px;object-fit:cover;border-radius:18px;box-shadow:0 24px 60px rgba(10,34,64,.22)}
 @media (min-width:981px){nav.main a{font-size:.96rem}}
+
+.hero-badges{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:40px;letter-spacing:0}
+.hero-badges .hb{display:flex;align-items:center;gap:14px;text-align:left;padding:12px 22px 12px 14px;border-radius:999px;background:rgba(10,34,64,.5);border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:#fff;text-decoration:none;transition:.25s}
+.hero-badges a.hb:hover{background:rgba(10,34,64,.75);border-color:var(--gold-soft)}
+.hero-badges .hb:before,.hero-badges .hb span:before{content:none}
+.hero-badges .hb i{flex:none;width:44px;height:44px;border-radius:50%;background:var(--gold);color:#fff;display:grid;place-items:center}
+.hero-badges .hb i svg{width:22px;height:22px}
+.hero-badges .hb span{display:block;line-height:1.25}
+.hero-badges .hb b{display:block;font-size:1.02rem;font-weight:600}
+.hero-badges .hb small{display:block;font-size:.82rem;font-weight:400;color:#e8dcc0}
+@media (max-width:900px){.hero-badges{gap:10px}.hero-badges .hb{padding:10px 16px 10px 10px}.hero-badges .hb small{display:none}.hero-badges .hb i{width:38px;height:38px}}
+@media (max-width:620px){.hero-badges{display:grid;grid-template-columns:1fr;max-width:300px;margin:28px auto 0;gap:8px}.hero-badges .hb{border-radius:14px}}
 @media (max-width:620px){body{font-size:18px}.hero p.lead{font-size:1.15rem}}
