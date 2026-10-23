@@ -501,6 +501,40 @@ footer .f-grid>div:first-child img{height:104px}
 @media (max-width:520px){.f-grid{grid-template-columns:1fr}.copy{flex-direction:column;text-align:center}}
 
 html.no-js .reveal{opacity:1!important;transform:none!important}
+
+/* ---- Rooms page ---- */
+.rm-list{display:grid;gap:34px}
+.rm{display:grid;grid-template-columns:1.1fr 1fr;background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 22px 50px -26px rgba(10,34,64,.45);border:1px solid #eadfc6;transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s}
+.rm:hover{transform:translateY(-8px);box-shadow:0 34px 60px -26px var(--c)}
+.rm.flip .rm-img{order:2}
+.rm-img{position:relative;overflow:hidden;min-height:340px;background:#f1e7d0}
+.rm-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.8,.2,1)}
+.rm:hover .rm-img img{transform:scale(1.08)}
+.rm-no{position:absolute;left:18px;top:18px;padding:7px 16px;border-radius:999px;background:var(--c);color:#fff;font-weight:600;font-size:.9rem;letter-spacing:.06em;box-shadow:0 8px 18px -6px var(--c)}
+.rm-body{position:relative;padding:44px 42px;display:flex;flex-direction:column;justify-content:center;gap:14px}
+.rm-body:before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:linear-gradient(180deg,var(--c),transparent)}
+.rm.flip .rm-body:before{left:auto;right:0}
+.rm-k{position:absolute;right:30px;top:12px;font-family:'Playfair Display',serif;font-weight:700;font-size:5rem;line-height:1;color:var(--c);opacity:.14}
+
+.rm-body h2{font-size:clamp(1.8rem,3vw,2.4rem);color:var(--navy)}
+.rm-body p{color:#3f4a56;font-size:1.08rem}
+.rm-chips{display:flex;flex-wrap:wrap;gap:8px}
+.rm-chips span{padding:6px 14px;border-radius:999px;font-size:.92rem;font-weight:500;color:var(--c);background:color-mix(in srgb,var(--c) 12%,#fff);border:1px solid color-mix(in srgb,var(--c) 35%,#fff)}
+.rm-btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:6px}
+.btn-ghost-dark{border-color:var(--navy);color:var(--navy);background:transparent}
+.btn-ghost-dark:hover{background:var(--navy);color:#fff}
+.rm.reveal{transform:translateY(46px)}.rm.reveal.in{transform:none}
+.incl{background:linear-gradient(180deg,#fff7ec,#fff)}
+.incl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.incl-i{position:relative;background:#fff;border-radius:18px;padding:26px 24px;border:1px solid #eadfc6;display:grid;grid-template-columns:56px 1fr;column-gap:16px;align-items:center;transition:transform .4s,box-shadow .4s}
+.incl-i:hover{transform:translateY(-6px);box-shadow:0 20px 40px -22px var(--c)}
+.incl-i i{grid-row:1/3;width:56px;height:56px;border-radius:16px;background:color-mix(in srgb,var(--c) 14%,#fff);display:grid;place-items:center;font-style:normal;font-size:1.6rem;transition:transform .5s cubic-bezier(.3,1.6,.5,1)}
+.incl-i:hover i{transform:rotate(-10deg) scale(1.15)}
+.incl-i b{font-family:'Playfair Display',serif;font-size:1.25rem;color:var(--navy)}
+.incl-i span{font-size:.98rem;color:#4b5663}
+.rooms-more{text-align:center;margin-top:40px}
+@media (max-width:900px){.rm,.rm.flip{grid-template-columns:1fr}.rm.flip .rm-img{order:0}.rm-img{min-height:260px}.rm-body{padding:30px 24px}.incl-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.incl-grid{grid-template-columns:1fr}.rm-k{font-size:3.4rem}}
 @media (max-width:620px){body{font-size:18px}.hero p.lead{font-size:1.15rem}}
 
 /* ---- floating Google review pop-up ---- */
