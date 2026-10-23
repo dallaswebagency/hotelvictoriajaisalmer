@@ -120,7 +120,7 @@
   if(q){q.addEventListener('submit',function(e){
     e.preventDefault();
     var p=new URLSearchParams({arr:$('q-in').value,nights:$('q-n').value,guests:$('q-g').value});
-    location.href='make-enquiry.html?'+p.toString();
+    location.href='contact-us.html?'+p.toString()+'#enquiry';
   });}
 
   var enq=$('enq');

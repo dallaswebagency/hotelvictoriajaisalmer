@@ -535,6 +535,10 @@ html.no-js .reveal{opacity:1!important;transform:none!important}
 .rooms-more{text-align:center;margin-top:40px}
 @media (max-width:900px){.rm,.rm.flip{grid-template-columns:1fr}.rm.flip .rm-img{order:0}.rm-img{min-height:260px}.rm-body{padding:30px 24px}.incl-grid{grid-template-columns:1fr 1fr}}
 @media (max-width:560px){.incl-grid{grid-template-columns:1fr}.rm-k{font-size:3.4rem}}
+
+.map-sec{background:#fff7ec}
+.map-sec .map{margin-top:0}
+.map-sec .reveal>p{text-align:center}
 @media (max-width:620px){body{font-size:18px}.hero p.lead{font-size:1.15rem}}
 
 /* ---- floating Google review pop-up ---- */
