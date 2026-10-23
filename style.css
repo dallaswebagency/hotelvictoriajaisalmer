@@ -467,6 +467,38 @@ nav.main ul{gap:6px 22px}
 .collage .cl-a:before,.collage .cl-b:before{content:"";position:absolute;left:0;right:0;bottom:0;height:5px;z-index:2}
 .collage .cl-a:before{background:linear-gradient(90deg,#e8890c,#c81e4d)}.collage .cl-b:before{background:linear-gradient(90deg,#4f46c8,#0e8f8a)}
 @media (max-width:980px){.collage{grid-template-rows:260px 180px}}
+
+/* ---- busier footer ---- */
+footer{padding:0 0 26px;background:linear-gradient(180deg,#fff7ec,#fdecd3)}
+.fbadges{display:flex;flex-wrap:wrap;gap:18px 22px;align-items:center;justify-content:center;padding:44px 0 36px;border-bottom:1px solid rgba(15,49,87,.15);margin-bottom:44px}
+footer .fb-ta{display:block;width:200px;flex:none}
+footer .fb-ta img{height:auto;width:100%;margin:0;border-radius:12px;box-shadow:0 12px 26px -12px rgba(10,34,64,.4)}
+.fb-g{display:flex;flex-direction:column;align-items:center;gap:2px;padding:14px 22px;min-width:200px;background:#fff;border:2px solid #dfe3e8;border-radius:14px;text-align:center;color:var(--navy);box-shadow:0 12px 26px -12px rgba(10,34,64,.3);transition:transform .3s}
+.fb-g:hover,.fb-ta:hover{transform:translateY(-4px)}
+.fbg-t{font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#5f6368}
+.fbg-s{color:#fbbc04;font-size:1.4rem;letter-spacing:3px}
+.fb-g b{font-family:'Playfair Display',serif;font-size:1.3rem}
+.fb-g span:last-child{font-size:.9rem;color:#3f4a56}
+.fb-pills{display:flex;flex-wrap:wrap;gap:10px;flex:1;min-width:280px;justify-content:center}
+.fb-pills span{display:inline-flex;align-items:center;gap:8px;padding:9px 16px 9px 10px;border-radius:999px;background:#fff;font-size:.95rem;font-weight:500;color:var(--navy);box-shadow:0 6px 16px -8px rgba(10,34,64,.35);transition:transform .3s}
+.fb-pills span:hover{transform:translateY(-3px) scale(1.04)}
+.fb-pills i{font-style:normal;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-size:.9rem;color:#fff}
+.fb-pills .p1 i{background:linear-gradient(135deg,#e8890c,#fbbf24)}.fb-pills .p2 i{background:linear-gradient(135deg,#c81e4d,#f472a0)}.fb-pills .p3 i{background:linear-gradient(135deg,#e0452b,#ff9d57)}.fb-pills .p4 i{background:linear-gradient(135deg,#0e8f8a,#38d0c4)}.fb-pills .p5 i{background:linear-gradient(135deg,#4f46c8,#8b8cf5)}.fb-pills .p6 i{background:linear-gradient(135deg,#2f9e5b,#7bd88f)}
+.f-grid{grid-template-columns:1.3fr .9fr 1.1fr 1.1fr 1.3fr;gap:34px}
+footer h4{position:relative;padding-bottom:10px;margin-bottom:16px}
+footer h4:after{content:"";position:absolute;left:0;bottom:0;width:38px;height:3px;border-radius:3px;background:var(--rainbow);background-size:200% 100%;animation:slideBg 6s linear infinite}
+footer .f-grid>div:first-child img{height:104px}
+.f-grid a{transition:color .25s,padding-left .25s}
+.f-grid li a:hover{padding-left:6px}
+.fbtn{margin-top:14px}
+.f-contact li{display:flex;gap:10px;align-items:flex-start}
+.f-contact li span{flex:none;width:24px;text-align:center}
+.copy{align-items:center}
+.copy .design a{color:var(--crimson);font-weight:600;border-bottom:1px solid currentColor}
+.copy .design a:hover{color:var(--indigo)}
+@media (max-width:1100px){.f-grid{grid-template-columns:1fr 1fr 1fr}}
+@media (max-width:760px){.f-grid{grid-template-columns:1fr 1fr}.fbadges{padding-top:34px}}
+@media (max-width:520px){.f-grid{grid-template-columns:1fr}.copy{flex-direction:column;text-align:center}}
 @media (max-width:620px){body{font-size:18px}.hero p.lead{font-size:1.15rem}}
 
 /* ---- floating Google review pop-up ---- */
