@@ -1,5 +1,5 @@
 (function(){
-  var B='https://hotelvictoriajaisalmer.com/files/';
+  var B='';
   var items=[
    ['assets/images/heritage-corridor.jpg','Heritage corridor'],
    ['assets/images/thali-meal.jpg','Home-style thali'],
@@ -69,6 +69,7 @@
    ['hvroom_no_10.jpg','Room 10'],
    ['hvroom_no_11.jpg','Room 11']
   ];
+  items=items.filter(function(x){return x[0].indexOf('assets/images/')===0;});
   var $=function(id){return document.getElementById(id)};
   var grid=$('grid'),lb=$('lb');
   if(grid&&lb){
